@@ -1,0 +1,32 @@
+
+<div class="container-fluid" *ngIf="product">
+		
+    <div class="content-wrapper">	
+		
+		<div class="item-container">	
+			<div class="container">	
+				<div class="col-md-12">
+						
+					<div class="product col-md-10">
+                    
+							<div class="form-group col-2 text-right">
+									<button (click)="goBack()" class="btn btn-outline-info glyphicon glyphicon-search button-image" ></button>
+								</div>
+							<img id="item-display" src="{{product.image}}" alt="">
+						
+					</div>
+				</div>
+					
+				<div class="col-md-10">
+					<div class="product-title">{{product.title}}</div>
+					<div class="product-desc">{{product.description}}</div>
+					<hr>
+					<div class="product-price">{{product.price}}</div>
+					<hr>
+				</div>
+			</div> 
+		</div>
+	
+	</div>
+</div>
+

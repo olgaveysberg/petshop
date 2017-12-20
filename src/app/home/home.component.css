@@ -1,0 +1,39 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.row-m-t{
+    margin-top : 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .button-image:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: text-top;
+    background-color: transparent;
+    background-position : center center;
+    background-repeat:no-repeat;
+    background-image : url(http://icons.iconarchive.com/icons/fatcow/farm-fresh/16/bookmark-icon.png);
+}
+
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+
+  .pdiv:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+    cursor: pointer;
+  }
+
+.pdiv{
+    padding-top: 50px;
+    font-weight: bold;
+    width: 10%;
+    text-align: center;
+}
+

@@ -1,0 +1,19 @@
+
+
+<div class="container">
+  
+ <div class="row row-m-t" *ngFor="let category of categories" [class.selected]="category === selectedCategory" (click)="onSelect(category)">
+    <div class="col-md-4 form-group"></div>
+     <div class="col-md-3 form-group">
+         <div>
+             <img width="120" height="120" src="{{category.image}}" />
+         </div>
+     </div>
+     <div class="col-md-2 form-group pdiv ">
+            <a routerLink="/products/{{category.id}}">
+                <p>{{category.title | uppercase}}</p>
+            </a>
+         
+     </div>
+ </div>
+</div>
